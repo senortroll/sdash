@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}sdash - servers{% endblock %}
+
+{% block page_content %}
+<div class="server-list">
+	{% for server in servers %}
+		<div class="server">
+			<span class="server-name">{{ server.name }}</span>
+		</div>
+	{% endfor %}
+</div>
+{% endblock %}
