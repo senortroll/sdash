@@ -3,12 +3,5 @@
 {% block title %}sdash{% endblock %}
 
 {% block page_content %}
-<div class="check-list">
-	{% for check in checks %}
-		<div class="check">
-			<span class="check-name">{{ check.name }}</span>
-			<span class="check-command">{{ check.command }}</span>
-		</div>
-	{% endfor %}
-</div>
+{{ checks }}
 {% endblock %}
